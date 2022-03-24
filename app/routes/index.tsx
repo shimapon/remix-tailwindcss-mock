@@ -8,11 +8,18 @@ const Index: React.FC = () => {
         <h2 className="text-2xl text-center"># Remix # tailwindCSS # Vercel</h2>
       </header>
       <main className="m-3">
-        <Link to="example1">
-          <div className="text-xl bg-gray-300 shadow p-3 w-fit rounded">
-            Example 1
-          </div>
-        </Link>
+        <div className="grid gap-2 auto-cols-max grid-flow-col">
+          <Link to="example1">
+            <div className="text-xl bg-gray-300 shadow p-3 w-auto rounded">
+              Example 1
+            </div>
+          </Link>
+          <Link to="example2">
+            <div className="text-xl bg-gray-300 shadow p-3 w-auto rounded">
+              Example 2
+            </div>
+          </Link>
+        </div>
       </main>
       <a
         type="button"
